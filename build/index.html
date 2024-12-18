@@ -1,0 +1,319 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   header
+  </title>
+  <link rel="stylesheet" href="./css/style.css">
+ </head>
+ <body class="bg-[#F9FEEDBF]">
+  <!-- navbar -->
+
+  <nav class="p-4 bg-white shadow">
+    <div class=" flex justify-between items-center">
+      <!-- Logo -->
+      <a class="text-black text-lg font-bold" href="#">
+        <img src="img/logo.png" alt="Logo" class="h-8">
+      </a>
+  
+      <!-- Hamburger Icon for Mobile -->
+      <button id="menu-toggle" class="text-black md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+  
+      <!-- Navigation Links -->
+      <div id="menu" class="hidden md:flex md:items-center md:space-x-8">
+        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-12">
+          <li><a class="text-black text-base hover:text-[#022269]" href="index.html">Home</a></li>
+          <li><a class="text-black text-base hover:text-[#022269]" href="work.html">How we work</a></li>
+          <li><a class="text-black text-base hover:text-[#022269]" href="about.html">About us</a></li>
+      
+        </ul>
+  
+        <!-- Dropdown Button -->
+        <div class="relative items-center">
+          <button id="dropdown-toggle" class="text-black bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">
+            ENG
+            <i class="fa-solid fa-caret-down"></i>&nbsp;
+          </button>
+          <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-40 bg-white border rounded shadow-lg">
+            <a class="block px-4 py-2 text-black hover:bg-gray-100" href="#">Urdu</a>
+            <a class="block px-4 py-2 text-black hover:bg-gray-100" href="#">Urdu</a>
+            <a class="block px-4 py-2 text-black hover:bg-gray-100" href="#">Hindi</a>
+          </div>
+        </div>
+  
+        <!-- Contact Us Button -->
+        <div class="items-center">
+          <button class="bg-[#022269] text-base text-white py-2 px-4 rounded-xl">
+            <i class="fa-solid fa-phone-volume"></i>&nbsp;
+            Contact us
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+
+
+  <section class="relative bg-cover bg-no-repeat bg-center h-[756px]" style="background-image: url(img/herobg.png);">
+    <div class="lg:pt-56 lg:pl-52 pt-20 md:pl-10 px-5 md:px-0 text-center md:text-start">
+        <p class="text-white text-xl font-bold">Welcome to Ultima Education / The Student-AU</p>
+        <h1 class="text-white md:text-7xl text-5xl font-bold  pt-5">Your Australian <br> Future</h1>
+        <p class="text-xl text-white pt-8 leading-7">Ultima is an Australian education agency supporting global <br class="md:block hidden"> students with academic admissions for a range of study options <br class="md:block hidden"> across all states.</p>
+        <div class="pt-8">
+            <button class="bg-white text-xl font-medium border rounded-xl text-[#022269] py-2 px-4">Learn more</button>
+        </div>
+    </div>
+  </section>
+
+
+  <section class="2xl:px-48 xl:px-10 px-5 py-32">
+    <div class="text-center">
+        <h1 class="text-5xl font-bold text-[#1D1F2C]">Our Services</h1>
+        <p class="text-lg leading-8 pt-3">We assist with course selection, student applications, interview prep, transfers, <br> summer/language school packages, and IELTS/PTE test guidance.</p>
+    </div>
+    <div class="pt-12">
+        <!-- first row csrds -->
+        <div class="w-full flex md:flex-row flex-col justify-center xl:gap-10 md:gap-5 space-y-6 md:space-y-0">
+            <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
+                <img src="img/cour.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2 pt-2">Collage / University / TAFE or Course Selection support</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">We provide personalized guidance to help you choose the right college, university, TAFE, or course.</p>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
+                <img src="img/cour.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">New Student Applications via our resident consultants</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">Our consultants help new students with seamless, accurate, and timely application submissions.</p>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
+                <img src="img/cour.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">College Interview Preparation</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">We offer expert guidance to help you prepare confidently for your college interviews.</p>
+            </div>
+        </div>
+
+        <!-- second row card -->
+
+        <div class="w-full flex md:flex-row flex-col justify-center xl:gap-10 md:gap-5 pt-6 space-y-6 md:space-y-0">
+            <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
+                <img src="img/cour.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2 pt-2">Collage / University / TAFE or Course Selection support</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lgleading-6 px-2 pt-4">We provide personalized guidance to help you choose the right college, university, TAFE, or course.</p>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
+                <img src="img/cour.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">New Student Applications via our resident consultants</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">Our consultants help new students with seamless, accurate, and timely application submissions.</p>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
+                <img src="img/cour.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">College Interview Preparation</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">We offer expert guidance to help you prepare confidently for your college interviews.</p>
+            </div>
+        </div>
+<!-- thired row cared -->
+        <div class="w-full flex md:flex-row flex-col justify-center xl:gap-10 md:gap-5 pt-6 space-y-6 md:space-y-0">
+            <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
+                <img src="img/cour.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2 pt-2">Collage / University / TAFE or Course Selection support</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lgleading-6 px-2 pt-4">We provide personalized guidance to help you choose the right college, university, TAFE, or course.</p>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
+                <img src="img/cour.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">New Student Applications via our resident consultants</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">Our consultants help new students with seamless, accurate, and timely application submissions.</p>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
+                <img src="img/cour.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">College Interview Preparation</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">We offer expert guidance to help you prepare confidently for your college interviews.</p>
+            </div>
+        </div>
+       
+    </div>
+  </section>
+
+  <!-- video section  -->
+
+  <section class="2xl:px-48 xl:px-28 lg:px-16 px-5">
+    <div class="text-center ">
+        <h1 class="text-[#1D1F2C] md:text-5xl text-3xl font-bold">Study in Australia</h1>
+        <p class="text-lg leading-7 pt-4">Study in Australia for world-class education, diverse courses, and global recognition. Benefit from the Australian <br class="xl:block hidden"> Qualifications Framework (AQF), vibrant campuses, and excellent support services, ensuring skill development and <br class="xl:block hidden"> career opportunities in a welcoming, multicultural environment.</p>
+        <div class="pt-10">
+            <video class="w-full h-full rounded-3xl" controls>
+                <source src="https://www.freepik.com/free-video/young-male-musician-streaming-video-tutorial-playing-guitar-home_164418#fromView=search&page=1&position=3&uuid=b24ae343-bf2d-4bd3-a5b8-b3a488b97b87" type="video/mp4">
+               
+              </video>
+        </div>
+    </div>
+  </section>
+
+  <section class="2xl:px-48 xl:px-28 lg:px-16 px-5 pt-20">
+    <div class="text-center">
+        <h1 class="md:text-5xl text-4xl font-bold text-[#1D1F2C]" >What is the AQF</h1>
+        <p class="text-lg text-[#1D1F2C] leading-8 pt-4" >Australian qualifications, under the AQF, are globally recognized, ensuring quality <br> education across vocational, undergraduate, and postgraduate levels for enhanced <br> skills and career opportunities.</p>
+    </div>
+    <div class="w-full flex lg:flex-row flex-col justify-between items-center pt-14">
+        <div class="lg:w-1/2 w-full">
+            <h1 class="text-[#022269] text-2xl font-medium pb-6">The AQF provides an integrated policy that <br class="hidden md:block lg:hidden xl:block"> comprises:</h1>
+            <hr>
+            <div class="flex items-center py-6">
+                <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp;
+                <p class="md:text-lg text-sm">The learning outcomes for each AQF level and qualification type</p>
+            </div>
+            <hr>
+            <div class="flex items-center py-6">
+                <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp;
+                <p class="md:text-lg text-sm">The specifications for the application of the AQF in the accreditation and development of qualifications</p>
+            </div>
+            <hr>
+            <div class="flex items-center py-6">
+                <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp;
+                <p class="md:text-lg text-sm">The policy requirements for qualification linkages and student pathways</p>
+            </div>
+            <hr>
+            <div class="flex items-center py-6">
+                <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp;
+                <p class="md:text-lg text-sm">AQF qualifications and qualification pathways</p>
+            </div>
+            <hr>
+            <div class="flex items-center py-6">
+                <i class="fa-regular fa-square-check"></i>&nbsp; &nbsp;
+                <p class="md:text-lg text-sm">The policy requirements for the addition or removal of qualification types in the AQE and the definitions of the terminology used in the policy.</p>
+            </div>
+        </div>
+        <div class="lg:w-1/2 w-full lg:pl-16 flex justify-center pt-5 lg:pt-0">
+            <img src="img/aqfimg.png" alt="">
+        </div>
+    </div>
+  </section>
+
+
+    <!-- journy section  -->
+
+  <section class="2xl:px-48 xl:px-28 lg:px-16 px-5 py-20 ">
+    <div class="bg-cover bg-no-repeat bg-center text-center py-16 rounded-3xl px-4 md:px-0" style="background-image: url(img/lastbg.png);">
+        <h1 class="md:text-5xl text-4xl font-bold text-white">Ready to Start Your Journey?</h1>
+        <p class="text-white text-lg pt-4">Take the first step toward achieving your education goals with our <br class="md:block hidden"> expert guidance. Contact us today for personalized support and <br class="md:block hidden"> make your dream a reality!</p>
+        <div class="pt-4">
+            <div class="pt-8">
+                <button class="bg-white text-xl font-medium border rounded-xl text-[#022269] py-2 px-4">Learn more</button>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#021A4F] lg:py-24 py-12 2xl:px-48 xl:px-28 lg:px-16 px-5">
+    <div class="flex md:flex-row flex-col justify-center md:items-start items-center md:text-start text-center md:space-y-0 space-y-8 2xl:gap-52 xl:gap-28 lg:gap-14 md:gap-10">
+        <div>
+            <p class="text-[#D2D2D5] lg:text-base text-sm">We offer personalized support for course <br class="md:block hidden"> selection, applications, interviews, <br class="md:block hidden"> transfers, and test prep.</p>
+        </div>
+
+        <div>
+            <h1 class="text-white text-lg font-medium">
+                Company
+            </h1>
+            <div class="text-[#D2D2D5] lg:text-base text-sm md:pt-4 pt-2">
+                <a href="" class="flex items-center" >
+                    <i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;
+                    <h1>How we work</h1>
+                </a>
+
+                <a href="" class="flex items-center" >
+                    <i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;
+                    <h1>About us</h1>
+                </a>
+
+                <a href="" class="flex items-center" >
+                    <i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;
+                    <h1>Services</h1>
+                </a>
+
+                <a href="" class="flex items-center" >
+                    <i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;
+                    <h1>Contact us</h1>
+                </a>
+
+            </div>
+        </div>
+
+        <div>
+            <h1 class="text-white text-lg font-medium">
+                Support
+            </h1>
+            <div class="text-[#D2D2D5] md:pt-4 pt-2">
+                <p class="md:text-base text-sm">E-mail</p>
+                <a href="" class="flex items-center md:text-base text-sm" >
+                    
+                    <h1>info@ultimaedu.au</h1>
+                </a>
+
+                <a href="" class="flex items-center md:text-base text-sm" >
+                    
+                    <h1>info@thestudent.au</h1>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="text-white ">
+            <h1 class="text-lg font-medium">Our Social network</h1>
+            <div class="space-x-4 md:pt-4 pt-2">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <div>
+    <div class="flex md:flex-row flex-col justify-between bg-[#010C25] py-2 lg:px-32 px-5 text-center md:text-start">
+        <p class="text-white lg:text-sm text-xs">Copyright 2024- Ultima Australia Pty Ltd . ACN - 682 421 101</p>
+        <div>
+            <p class="text-white lg:text-sm text-xs pt-4 md:pt-0">Privacy Policy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Terms & Conditions</p>
+        </div>
+    </div>
+    
+  </div>
+
+   <!-- navbar js -->
+   <script>
+    // Toggle mobile menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  
+    // Toggle dropdown menu
+    const dropdownToggle = document.getElementById('dropdown-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    dropdownToggle.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+    });
+  
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.add('hidden');
+      }
+    });
+  </script>
+
+  <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+
+
+ </body>
+</html>
