@@ -10,53 +10,77 @@
  <body class="bg-[#F9FEEDBF]">
   <!-- navbar -->
 
-  <nav class="p-4 bg-white shadow">
-    <div class=" flex justify-between items-center">
-      <!-- Logo -->
-      <a class="text-black text-lg font-bold" href="#">
-        <img src="img/logo.png" alt="Logo" class="h-8">
-      </a>
-  
-      <!-- Hamburger Icon for Mobile -->
-      <button id="menu-toggle" class="text-black md:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </button>
-  
-      <!-- Navigation Links -->
-      <div id="menu" class="hidden md:flex md:items-center md:space-x-8">
-        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-12">
-          <li><a class="text-black text-base hover:text-[#022269]" href="index.html">Home</a></li>
-          <li><a class="text-black text-base hover:text-[#022269]" href="work.html">How we work</a></li>
-          <li><a class="text-black text-base hover:text-[#022269]" href="about.html">About us</a></li>
-      
-        </ul>
-  
-        <!-- Dropdown Button -->
-        <div class="relative items-center">
-          <button id="dropdown-toggle" class="text-black bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">
-            ENG
-            <i class="fa-solid fa-caret-down"></i>&nbsp;
-          </button>
-          <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-40 bg-white border rounded shadow-lg">
-            <a class="block px-4 py-2 text-black hover:bg-gray-100" href="#">Urdu</a>
-            <a class="block px-4 py-2 text-black hover:bg-gray-100" href="#">Urdu</a>
-            <a class="block px-4 py-2 text-black hover:bg-gray-100" href="#">Hindi</a>
-          </div>
+  <nav class="p-4 bg-white shadow relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex-shrink-0 ">
+          <img class="absolute z-50 top-0 img-fluid w-auto lg:block hidden" src="./img/logo.png" alt="Logo">
         </div>
   
-        <!-- Contact Us Button -->
-        <div class="items-center">
-          <button class="bg-[#022269] text-base text-white py-2 px-4 rounded-xl">
-            <i class="fa-solid fa-phone-volume"></i>&nbsp;
-            Contact us
+        <!-- Hamburger button for mobile and medium screens -->
+        <div class="lg:hidden">
+          <button id="menu-button" class="text-gray-500 focus:outline-none">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
           </button>
+        </div>
+  
+        <!-- Navbar Links (Desktop) -->
+        <div id="desktop-menu" class="hidden lg:flex md:items-center md:space-x-8">
+          <a href="index.html" class="text-black hover:text-[#022269]">Home</a>
+          <a href="work.html" class="text-black hover:text-[#022269]">How we work</a>
+          <a href="about.html" class="text-black hover:text-[#022269]">About us</a>
+  
+          <!-- Language Dropdown -->
+          <div class="relative">
+            <button id="dropdown-toggle" class="text-black hover:text-[#022269] focus:outline-none">
+              ENG
+              <i class="fa-solid fa-caret-down"></i>&nbsp;
+            </button>
+            <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-40 bg-white border rounded shadow-lg z-10">
+              <a class="block px-4 py-2 text-black hover:bg-gray-100" href="#">Spanish</a>
+              <a class="block px-4 py-2 text-black hover:bg-gray-100" href="#">French</a>
+              <a class="block px-4 py-2 text-black hover:bg-gray-100" href="#">German</a>
+            </div>
+          </div>
+  
+          <!-- Contact Us Button -->
+          <div class="items-center">
+            <a href="contact.html">
+              <button class="bg-[#022269] text-base text-white py-2 px-4 rounded-xl">
+                <i class="fa-solid fa-phone-volume"></i>&nbsp;
+                Contact us
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
+  
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="hidden absolute left-0 w-full bg-white shadow-lg z-10 lg:hidden px-5"
+    >
+      <a href="index.html" class="block  py-2 text-black hover:text-[#022269]">Home</a>
+      <a href="work.html" class="block  py-2 text-black hover:text-[#022269]">How we work</a>
+      <a href="about.html" class="block  py-2 text-black hover:text-[#022269]">About us</a>
+  
+      <!-- Contact Us Button -->
+      <div class="items-center py-12 w-full ">
+        <a href="contact.html">
+          <button class="bg-[#022269] text-base text-white py-2 px-4 rounded-xl w-full">
+            <i class="fa-solid fa-phone-volume"></i>&nbsp;
+            Contact us
+          </button>
+        </a>
+      </div>
+    </div>
   </nav>
-
+  
+  
   <!-- Hero Section -->
 
 
@@ -66,7 +90,9 @@
         <h1 class="text-white md:text-7xl text-5xl font-bold  pt-5">Your Australian <br> Future</h1>
         <p class="text-xl text-white pt-8 leading-7">Ultima is an Australian education agency supporting global <br class="md:block hidden"> students with academic admissions for a range of study options <br class="md:block hidden"> across all states.</p>
         <div class="pt-8">
+          <a href="work.html">
             <button class="bg-white text-xl font-medium border rounded-xl text-[#022269] py-2 px-4">Learn more</button>
+          </a>
         </div>
     </div>
   </section>
@@ -87,13 +113,13 @@
             </div>
 
             <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
-                <img src="img/cour.png" class="img-fluid" alt="">
+                <img src="img/img2.png" class="img-fluid" alt="">
                 <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">New Student Applications via our resident consultants</h1>
                 <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">Our consultants help new students with seamless, accurate, and timely application submissions.</p>
             </div>
 
             <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
-                <img src="img/cour.png" class="img-fluid" alt="">
+                <img src="img/img3.png" class="img-fluid" alt="">
                 <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">College Interview Preparation</h1>
                 <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">We offer expert guidance to help you prepare confidently for your college interviews.</p>
             </div>
@@ -103,25 +129,26 @@
 
         <div class="w-full flex md:flex-row flex-col justify-center xl:gap-10 md:gap-5 pt-6 space-y-6 md:space-y-0">
             <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
-                <img src="img/cour.png" class="img-fluid" alt="">
-                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2 pt-2">Collage / University / TAFE or Course Selection support</h1>
-                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lgleading-6 px-2 pt-4">We provide personalized guidance to help you choose the right college, university, TAFE, or course.</p>
+                <img src="img/img4.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2 pt-2">Transfer Applications</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lgleading-6 px-2 pt-4">We assist with smooth and efficient transfer applications, ensuring a hassle-free transition process.</p>
             </div>
 
             <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
-                <img src="img/cour.png" class="img-fluid" alt="">
-                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">New Student Applications via our resident consultants</h1>
-                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">Our consultants help new students with seamless, accurate, and timely application submissions.</p>
+                <img src="img/img5.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">Summer School / Language School Packages</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">We offer tailored summer and language school packages to enhance your skills and experience.</p>
             </div>
 
             <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
-                <img src="img/cour.png" class="img-fluid" alt="">
-                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">College Interview Preparation</h1>
-                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">We offer expert guidance to help you prepare confidently for your college interviews.</p>
+                <img src="img/img6.png" class="img-fluid" alt="">
+                <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">Test Prep Guidance 
+                  (IELTS / PTE )</h1>
+                <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">We provide expert test prep guidance for IELTS and PTE, ensuring you achieve your best score.</p>
             </div>
         </div>
 <!-- thired row cared -->
-        <div class="w-full flex md:flex-row flex-col justify-center xl:gap-10 md:gap-5 pt-6 space-y-6 md:space-y-0">
+        <!-- <div class="w-full flex md:flex-row flex-col justify-center xl:gap-10 md:gap-5 pt-6 space-y-6 md:space-y-0">
             <div class="lg:w-1/4 md:w-1/3 bg-white rounded-lg pb-6">
                 <img src="img/cour.png" class="img-fluid" alt="">
                 <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2 pt-2">Collage / University / TAFE or Course Selection support</h1>
@@ -139,7 +166,7 @@
                 <h1 class="xl:text-2xl md:text-lg text-2xl font-bold text-[#022269] px-2  pt-2">College Interview Preparation</h1>
                 <p class="text-[#1D1F2C] xl:text-lg md:text-base text-lg leading-6 px-2 pt-4">We offer expert guidance to help you prepare confidently for your college interviews.</p>
             </div>
-        </div>
+        </div> -->
        
     </div>
   </section>
@@ -291,15 +318,16 @@
    <!-- navbar js -->
    <script>
     // Toggle mobile menu
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  
-    // Toggle dropdown menu
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
     const dropdownToggle = document.getElementById('dropdown-toggle');
     const dropdownMenu = document.getElementById('dropdown-menu');
+  
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  
+    // Dropdown toggle logic
     dropdownToggle.addEventListener('click', () => {
       dropdownMenu.classList.toggle('hidden');
     });
